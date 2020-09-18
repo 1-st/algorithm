@@ -18,30 +18,30 @@ package main
 
 func nextPermutation(nums []int) {
 	len := len(nums)
+
 	if len == 0 || len == 1 {
 		return
 	}
-	i := len - 1
-	find := false
-	for ; i > 0 && !find; {
-		i--
+
+	i := len - 2
+	for ; i >= 0; i--{
 		if nums[i] < nums[i+1] {
-			for j := i + 1; j < len; j++ {
-				if nums[j] <= nums[i] {
-					nums[i], nums[j-1] = nums[j-1], nums[i]
-					find = true
-					break
-				} else if j == len-1 {
-					nums[i], nums[j] = nums[j], nums[i]
-					find = true
-					break
-				}
+			break
+		}
+	}
+
+	if i>=0 {
+		for j := i + 1; j < len; j++ {
+			if nums[j] <= nums[i] {
+				nums[i], nums[j-1] = nums[j-1], nums[i]
+				break
+			} else if j == len-1 {
+				nums[i], nums[j] = nums[j], nums[i]
+				break
 			}
 		}
 	}
-	if !find {
-		i--
-	}
+
 	for k := i + 1; k <= (i+len)/2; k++ {
 		nums[k], nums[len-(k-i)] = nums[len-(k-i)], nums[k]
 	}
