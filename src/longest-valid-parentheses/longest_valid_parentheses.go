@@ -7,9 +7,9 @@ import "container/list"
 		from:"https://leetcode-cn.com/problems/longest-valid-parentheses",
 		reference:[],
 		description:"最长有效括号长度",
-		solved:false,
+		solved:true,
 	}
-!*/
+*/
 
 /*
 	1.额外维护一个相同长度的bool数组,保存相应位置括号是否已经被匹配,初始全部为false,
