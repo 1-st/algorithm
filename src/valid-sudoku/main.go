@@ -1,6 +1,6 @@
 package main
 
-/*!
+/*
 {
 	from:"https://leetcode-cn.com/problems/valid-sudoku",
 	reference:[],

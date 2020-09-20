@@ -2,7 +2,7 @@ package main
 
 import "container/list"
 
-/*!
+/*
 	{
 		from:"https://leetcode-cn.com/problems/longest-valid-parentheses",
 		reference:[],
