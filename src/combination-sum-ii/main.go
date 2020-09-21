@@ -18,8 +18,7 @@ import "sort"
 
 	tips:注意第二处减枝不要习惯性加上return
  */
- */
-*/
+
 
 func combinationSum2(candidates []int, target int) [][]int {
 	sort.Ints(candidates)
@@ -72,4 +71,3 @@ func combinationSum2(candidates []int, target int) [][]int {
 //	}
 //	dfs(target, 0)
 //	return res
-}
