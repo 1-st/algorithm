@@ -12,6 +12,9 @@ package main
 /*
 	1.由低向高扫描，填坑，如果遇到一层没有新增雨水的情况，返回
 	2.scan from left to right
+
+	tips:本做法可以改进为左右各扫描一次
+	使用双指针法可以完美解决此问题
 */
 
 func trap(height []int) int {
