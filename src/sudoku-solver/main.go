@@ -22,7 +22,7 @@ type Solution struct {
 	Stop  bool
 }
 
-func (s *Solution) bfs(solved int) {
+func (s *Solution) dfs(solved int) {
 	if solved == len(s.Empty) {
 		s.Stop = true
 		return
@@ -32,7 +32,7 @@ func (s *Solution) bfs(solved int) {
 		if s.canSet(i, j, k) {
 			s.setState(i, j, k, true)
 			(*s.board)[i][j] = byte(k + '1')
-			s.bfs(solved + 1)
+			s.dfs(solved + 1)
 			s.setState(i, j, k, false)
 		}
 	}
@@ -76,5 +76,5 @@ func solveSudoku(board [][]byte) {
 			}
 		}
 	}
-	s.bfs(0)
+	s.dfs(0)
 }
