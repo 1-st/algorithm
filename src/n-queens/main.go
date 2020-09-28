@@ -4,6 +4,14 @@ import (
 	"container/list"
 	"fmt"
 )
+/*
+	{
+		from:"https://leetcode-cn.com/problems/n-queens",
+		reference:[],
+		description:"n皇后问题",
+		solved:true,
+	}
+*/
 
 func solveNQueens(n int) [][]string {
 	var (
