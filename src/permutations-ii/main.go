@@ -64,5 +64,5 @@ func permuteUnique(nums []int) [][]int {
 }
 
 func main() {
-	permuteUnique([]int{1,1,2,2})
+	permuteUnique([]int{1,2,3,4})
 }
