@@ -1,5 +1,15 @@
 package main
 
+
+/*
+	{
+		from:"https://leetcode-cn.com/problems/permutation-sequence",
+		reference:[],
+		description:"第K个排列",
+		solved:true,
+	}
+*/
+
 import "sort"
 
 type ByteSlice []byte
