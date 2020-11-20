@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.15)
 
-project(product-of-polynomials)
+project(radix)
 
 
 set(CMAKE_CXX_STANDARD 17)
