@@ -104,7 +104,7 @@ int main() {
   while (p--) {
     int x, y, z;
     scanf("%d%d%d", &x, &y, &z);
-    a[x][y] = a[y][x] = min(a[x][y], z);
+    a[x][y] = a[y][x] = z;
   }
 
   // processing
