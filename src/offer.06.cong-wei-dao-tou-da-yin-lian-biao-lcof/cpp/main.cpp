@@ -1,10 +1,10 @@
-#include <vector>
 #include <list>
+#include <vector>
 
 /*
 {
-  from:"https://leetcode-cn.com/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/" ,
-  description:"从尾到头打印链表"
+  from:"https://leetcode-cn.com/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/"
+, description:"从尾到头打印链表"
 }
 */
 using namespace std;
@@ -12,12 +12,10 @@ using namespace std;
 struct ListNode {
   int val;
   ListNode *next;
-  ListNode(int x) : val(x), next(nullptr) {
-
-  }
+  ListNode(int x) : val(x), next(nullptr) {}
 };
 class Solution {
- public:
+public:
   vector<int> reversePrint(ListNode *head) {
     list<int> stack;
     while (head != nullptr) {
